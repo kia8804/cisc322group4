@@ -1,65 +1,135 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset / Basic Styling */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f8f8;
     color: #333;
-    background: #f9f9f9;
-}
-
-header {
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #007acc;
+    padding: 2rem 1rem;
     text-align: center;
-    padding: 20px;
-    background: #0044cc;
-    color: white;
-}
-
-header .logo img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-main {
-    padding: 20px;
+    color: #fff;
+  }
+  
+  .header-content {
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h1, h2 {
-    color: #0044cc;
-}
-
-ul {
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-name {
+    font-size: 1.1rem;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    display: inline-block;
+    padding: 1rem 0;
     text-decoration: none;
-    color: #0044cc;
-    border-bottom: 1px dashed #0044cc;
-}
-
-ul li a:hover {
-    color: #003399;
-    border-bottom: 1px solid #003399;
-}
-
-footer {
+    color: #007acc;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #005b99;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #007acc;
+  }
+  
+  /* Lists */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Links */
+  a {
+    color: #007acc;
+    text-decoration: none;
+    border-bottom: 1px dashed #007acc;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+  }
+  
+  a:hover {
+    color: #005b99;
+    border-bottom: 1px solid #005b99;
+  }
+  
+  /* Team List */
+  .team-list li {
+    line-height: 1.4;
+  }
+  
+  .team-list strong {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
     text-align: center;
-    padding: 10px;
-    background: #0044cc;
-    color: white;
-    margin-top: 20px;
-}
+    background-color: #007acc;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
