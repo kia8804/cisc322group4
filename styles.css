@@ -1,34 +1,32 @@
-/* General Reset / Basic Styling */
+/* 1. Reset & Basic Setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+  /* Remove default scroll bouncing/pull-down in some browsers */
+  html, body {
+    overscroll-behavior: none;
+    height: 100%;
     background-color: #f8f8f8;
     color: #333;
-    line-height: 1.6;
+    font-family: "Helvetica Neue", Arial, sans-serif;
   }
   
-  /* Header */
+  /* 2. Page Wrapper (Flex Container) */
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer sticks at bottom if content is short */
+  }
+  
+  /* 3. Header */
   header {
-    background-color: #007acc;
-    padding: 2rem 1rem;
-    text-align: center;
+    background: #005b99;
     color: #fff;
-  }
-  
-  .header-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem 1rem;
   }
   
   header h1 {
@@ -37,19 +35,19 @@
   }
   
   .team-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
-  /* Navigation */
+  /* 4. Navigation */
   nav {
-    background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
   
   .nav-links {
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style-type: none;
   }
   
   .nav-links li {
@@ -60,39 +58,41 @@
     display: inline-block;
     padding: 1rem 0;
     text-decoration: none;
-    color: #007acc;
+    color: #005b99;
     font-weight: 500;
     transition: color 0.2s ease;
   }
   
   .nav-links a:hover {
-    color: #005b99;
+    color: #003e6b;
   }
   
-  /* Main Content */
+  /* 5. Main Content */
   main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 5px;
+    flex: 1; /* Grow/shrink to fill space */
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
   }
   
-  /* Sections */
-  section {
+  /* Card Style for Sections */
+  .card {
+    background: #fff;
     margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
   
-  section h2 {
+  .card h2 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #007acc;
+    color: #005b99;
+    font-size: 1.4rem;
   }
   
   /* Lists */
   ul {
     list-style: none;
-    margin: 0;
     padding: 0;
   }
   
@@ -102,34 +102,28 @@
   
   /* Links */
   a {
-    color: #007acc;
+    color: #005b99;
     text-decoration: none;
-    border-bottom: 1px dashed #007acc;
+    border-bottom: 1px dashed #005b99;
     transition: color 0.2s ease, border-bottom 0.2s ease;
   }
   
   a:hover {
-    color: #005b99;
-    border-bottom: 1px solid #005b99;
+    color: #003e6b;
+    border-bottom: 1px solid #003e6b;
   }
   
   /* Team List */
-  .team-list li {
-    line-height: 1.4;
-  }
-  
-  .team-list strong {
+  .team-list li strong {
     font-weight: 600;
     color: #333;
   }
   
-  /* Footer */
+  /* 6. Footer (Sticky at Bottom) */
   footer {
-    text-align: center;
-    background-color: #007acc;
+    background: #005b99;
     color: #fff;
+    text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
   }
   

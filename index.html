@@ -4,118 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Team Project</title>
-  <!-- Link to your stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <div class="header-content">
-      <img src="images/logo.png" alt="Team Logo" class="logo" />
+  <!-- Page Wrapper for Flex Layout -->
+  <div class="page-wrapper">
+    
+    <!-- Header -->
+    <header>
       <h1>Project Title</h1>
       <p class="team-name">Team Name: <strong>Awesome Group</strong></p>
-    </div>
-  </header>
+    </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#documentation">Documentation</a></li>
-      <li><a href="#reports">Reports</a></li>
-      <li><a href="#slides">Slides</a></li>
-      <li><a href="#team">Team</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content Area -->
-  <main>
-
-    <!-- Documentation Section -->
-    <section id="documentation">
-      <h2>Documentation</h2>
-      <ul>
-        <li>
-          <a 
-            href="https://link-to-relevant-docs.com" 
-            target="_blank" 
-            rel="noopener"
-          >
-            Relevant Documentation
-          </a>
-        </li>
-        <li>
-          <a 
-            href="https://link-to-more-docs.com" 
-            target="_blank" 
-            rel="noopener"
-          >
-            Additional Resources
-          </a>
-        </li>
+    <!-- Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#slides">Slides</a></li>
+        <li><a href="#team">Team</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <!-- Reports Section -->
-    <section id="reports">
-      <h2>Reports</h2>
-      <ul>
-        <li>
-          <a href="reports/report1.pdf" target="_blank" rel="noopener">
-            Report 1
-          </a>
-        </li>
-        <li>
-          <a href="reports/report2.pdf" target="_blank" rel="noopener">
-            Report 2
-          </a>
-        </li>
-      </ul>
-    </section>
+    <!-- Main Content (Flex-Grow: 1) -->
+    <main>
+      <!-- Documentation Section -->
+      <section id="documentation" class="card">
+        <h2>Documentation</h2>
+        <ul>
+          <li>
+            <a 
+              href="https://link-to-relevant-docs.com" 
+              target="_blank"
+              rel="noopener"
+            >
+              Relevant Documentation
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://link-to-more-docs.com" 
+              target="_blank"
+              rel="noopener"
+            >
+              Additional Resources
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Slides Section -->
-    <section id="slides">
-      <h2>Slides &amp; Presentations</h2>
-      <ul>
-        <li>
-          <a href="slides/presentation1.pdf" target="_blank" rel="noopener">
-            Presentation 1
-          </a>
-        </li>
-        <li>
-          <a href="slides/presentation2.pdf" target="_blank" rel="noopener">
-            Presentation 2
-          </a>
-        </li>
-      </ul>
-    </section>
+      <!-- Reports Section -->
+      <section id="reports" class="card">
+        <h2>Reports</h2>
+        <ul>
+          <li>
+            <a href="reports/report1.pdf" target="_blank" rel="noopener">
+              Report 1
+            </a>
+          </li>
+          <li>
+            <a href="reports/report2.pdf" target="_blank" rel="noopener">
+              Report 2
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Team Section -->
-    <section id="team">
-      <h2>Meet the Team</h2>
-      <ul class="team-list">
-        <li>
-          <strong>John Doe</strong> – 
-          <a href="mailto:johndoe@example.com">johndoe@example.com</a>
-        </li>
-        <li>
-          <strong>Jane Smith</strong> – 
-          <a href="mailto:janesmith@example.com">janesmith@example.com</a>
-        </li>
-        <li>
-          <strong>Bob Lee</strong> – 
-          <a href="mailto:boblee@example.com">boblee@example.com</a>
-        </li>
-        <!-- Add more team members as needed -->
-      </ul>
-    </section>
+      <!-- Slides Section -->
+      <section id="slides" class="card">
+        <h2>Slides &amp; Presentations</h2>
+        <ul>
+          <li>
+            <a href="slides/presentation1.pdf" target="_blank" rel="noopener">
+              Presentation 1
+            </a>
+          </li>
+          <li>
+            <a href="slides/presentation2.pdf" target="_blank" rel="noopener">
+              Presentation 2
+            </a>
+          </li>
+        </ul>
+      </section>
 
-  </main>
+      <!-- Team Section -->
+      <section id="team" class="card">
+        <h2>Meet the Team</h2>
+        <ul class="team-list">
+          <li>
+            <strong>John Doe</strong> – 
+            <a href="mailto:johndoe@example.com">johndoe@example.com</a>
+          </li>
+          <li>
+            <strong>Jane Smith</strong> – 
+            <a href="mailto:janesmith@example.com">janesmith@example.com</a>
+          </li>
+          <li>
+            <strong>Bob Lee</strong> – 
+            <a href="mailto:boblee@example.com">boblee@example.com</a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>© 2025 Awesome Group. All Rights Reserved.</p>
-  </footer>
+    <!-- Footer (Sticky at Bottom if Content is Short) -->
+    <footer>
+      <p>© 2025 Awesome Group. All Rights Reserved.</p>
+    </footer>
 
+  </div>
 </body>
 </html>
