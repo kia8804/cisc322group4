@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team Project</title>
+  <title>CISC 322 Group Project</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Page Wrapper for Flex Layout -->
+  <!-- Page Wrapper -->
   <div class="page-wrapper">
     
     <!-- Header -->
     <header>
-      <h1>Project Title</h1>
-      <p class="team-name">Team Name: <strong>Awesome Group</strong></p>
+      <h1>CISC 322 Group Project</h1>
+      <p class="team-name">Team Name: <strong>Group 4</strong></p>
     </header>
 
     <!-- Navigation -->
@@ -27,7 +27,7 @@
       </ul>
     </nav>
 
-    <!-- Main Content (Flex-Grow: 1) -->
+    <!-- Main Content -->
     <main>
       <!-- Documentation Section -->
       <section id="documentation" class="card">
@@ -57,35 +57,95 @@
       <!-- Reports Section -->
       <section id="reports" class="card">
         <h2>Reports</h2>
-        <ul>
-          <li>
-            <a href="reports/report1.pdf" target="_blank" rel="noopener">
-              Report 1
+        <!-- Grid for PDF Previews -->
+        <div class="preview-grid">
+          <!-- Example of a PDF preview box -->
+          <div class="preview-box">
+            <!-- 
+              Using <object> for PDF preview. 
+              Note: This may not work on all mobile browsers or with certain file types. 
+            -->
+            <object 
+              data="reports/report1.pdf" 
+              type="application/pdf"
+              class="pdf-preview"
+            >
+              <!-- Fallback content if browser can't preview PDF -->
+              <p>Preview not available. 
+                <a href="reports/report1.pdf" target="_blank" rel="noopener">
+                  Open Report 1
+                </a>
+              </p>
+            </object>
+            <p class="preview-title">Report 1</p>
+            <a href="reports/report1.pdf" target="_blank" rel="noopener" class="btn">
+              Open PDF
             </a>
-          </li>
-          <li>
-            <a href="reports/report2.pdf" target="_blank" rel="noopener">
-              Report 2
+          </div>
+
+          <div class="preview-box">
+            <object 
+              data="reports/report2.pdf" 
+              type="application/pdf" 
+              class="pdf-preview"
+            >
+              <p>Preview not available. 
+                <a href="reports/report2.pdf" target="_blank" rel="noopener">
+                  Open Report 2
+                </a>
+              </p>
+            </object>
+            <p class="preview-title">Report 2</p>
+            <a href="reports/report2.pdf" target="_blank" rel="noopener" class="btn">
+              Open PDF
             </a>
-          </li>
-        </ul>
+          </div>
+
+          <!-- Add more reports here if needed -->
+        </div>
       </section>
 
       <!-- Slides Section -->
       <section id="slides" class="card">
         <h2>Slides &amp; Presentations</h2>
-        <ul>
-          <li>
-            <a href="slides/presentation1.pdf" target="_blank" rel="noopener">
-              Presentation 1
+        <div class="preview-grid">
+          <div class="preview-box">
+            <object 
+              data="slides/presentation1.pdf" 
+              type="application/pdf" 
+              class="pdf-preview"
+            >
+              <p>Preview not available. 
+                <a href="slides/presentation1.pdf" target="_blank" rel="noopener">
+                  Open Presentation 1
+                </a>
+              </p>
+            </object>
+            <p class="preview-title">Presentation 1</p>
+            <a href="slides/presentation1.pdf" target="_blank" rel="noopener" class="btn">
+              Open PDF
             </a>
-          </li>
-          <li>
-            <a href="slides/presentation2.pdf" target="_blank" rel="noopener">
-              Presentation 2
+          </div>
+
+          <div class="preview-box">
+            <object 
+              data="slides/presentation2.pdf" 
+              type="application/pdf" 
+              class="pdf-preview"
+            >
+              <p>Preview not available. 
+                <a href="slides/presentation2.pdf" target="_blank" rel="noopener">
+                  Open Presentation 2
+                </a>
+              </p>
+            </object>
+            <p class="preview-title">Presentation 2</p>
+            <a href="slides/presentation2.pdf" target="_blank" rel="noopener" class="btn">
+              Open PDF
             </a>
-          </li>
-        </ul>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
       </section>
 
       <!-- Team Section -->
@@ -93,26 +153,23 @@
         <h2>Meet the Team</h2>
         <ul class="team-list">
           <li>
-            <strong>John Doe</strong> – 
+            <strong>John Doe</strong> –
             <a href="mailto:johndoe@example.com">johndoe@example.com</a>
           </li>
           <li>
-            <strong>Jane Smith</strong> – 
+            <strong>Jane Smith</strong> –
             <a href="mailto:janesmith@example.com">janesmith@example.com</a>
           </li>
           <li>
-            <strong>Bob Lee</strong> – 
+            <strong>Bob Lee</strong> –
             <a href="mailto:boblee@example.com">boblee@example.com</a>
           </li>
         </ul>
       </section>
     </main>
 
-    <!-- Footer (Sticky at Bottom if Content is Short) -->
-    <footer>
-      <p>© 2025 Awesome Group. All Rights Reserved.</p>
-    </footer>
-
+    <!-- (No Footer) -->
   </div>
+
 </body>
 </html>
