@@ -57,20 +57,13 @@
       <!-- Reports Section -->
       <section id="reports" class="card">
         <h2>Reports</h2>
-        <!-- Grid for PDF Previews -->
         <div class="preview-grid">
-          <!-- Example of a PDF preview box -->
           <div class="preview-box">
-            <!-- 
-              Using <object> for PDF preview. 
-              Note: This may not work on all mobile browsers or with certain file types. 
-            -->
             <object 
               data="reports/report1.pdf" 
               type="application/pdf"
               class="pdf-preview"
             >
-              <!-- Fallback content if browser can't preview PDF -->
               <p>Preview not available. 
                 <a href="reports/report1.pdf" target="_blank" rel="noopener">
                   Open Report 1
@@ -82,7 +75,6 @@
               Open PDF
             </a>
           </div>
-
           <div class="preview-box">
             <object 
               data="reports/report2.pdf" 
@@ -100,8 +92,6 @@
               Open PDF
             </a>
           </div>
-
-          <!-- Add more reports here if needed -->
         </div>
       </section>
 
@@ -126,7 +116,6 @@
               Open PDF
             </a>
           </div>
-
           <div class="preview-box">
             <object 
               data="slides/presentation2.pdf" 
@@ -144,21 +133,49 @@
               Open PDF
             </a>
           </div>
-          <!-- Add more slides as needed -->
         </div>
       </section>
 
+      <!-- NEW: Presentation Videos Section -->
+      <section id="presentation-videos" class="card">
+        <h2>Presentation Videos</h2>
+        <div class="preview-grid">
+          <div class="preview-box">
+            <iframe 
+              class="video-preview"
+              src="https://www.youtube.com/watch?v=EJvA7kuxuZo&ab_channel=Ebrahim" 
+              title="Presentation Video 1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <p class="preview-title">Presentation 1 Video</p>
+          </div>
+          <div class="preview-box">
+            <iframe 
+              class="video-preview"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" 
+              title="Presentation Video 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <p class="preview-title">Presentation 2 Video</p>
+          </div>
+        </div>
+      </section>
+      
       <!-- Team Section -->
       <section id="team" class="card">
         <h2>Meet the Team</h2>
         <ul class="team-list">
           <li>
             <strong>Kiarash Mirkamandari</strong> –
-            <a href="mailto:johndoe@example.com">kiarash.mirkamandari@queensu.ca</a>
+            <a href="mailto:kiarash.mirkamandari@queensu.ca">kiarash.mirkamandari@queensu.ca</a>
           </li>
           <li>
             <strong>Bahar Rahimivarposhti</strong> –
-            <a href="mailto:janesmith@example.com">23vs27@queensu.ca</a>
+            <a href="mailto:23vs27@queensu.ca">23vs27@queensu.ca</a>
           </li>
           <li>
             <strong>Ebrahim Haghshenas</strong> –
@@ -166,7 +183,7 @@
           </li>
           <li>
             <strong>Masih Hashemi</strong> –
-            <a href="mailto:johndoe@example.com">21mh137@queensu.ca</a>
+            <a href="mailto:21mh137@queensu.ca">21mh137@queensu.ca</a>
           </li>
           <li>
             <strong>Kiarash SoleimaniRoozbahani</strong> –
@@ -174,12 +191,11 @@
           </li>
           <li>
             <strong>Andrew Ternopolsky</strong> –
-            <a href="mailto:johndoe@example.com">21at103@queensu.ca</a>
+            <a href="mailto:21at103@queensu.ca">21at103@queensu.ca</a>
           </li>
         </ul>
       </section>
     </main>
-
   </div>
 
 </body>
